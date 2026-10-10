@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 1. DESCENDANT SELECTOR - rubric requirement */
+.expenses-section td {
+    color: #333;
+}
+
+/* Table Styling - rubric requirement */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 2. PSEUDO-CLASS POSITION - alternating rows */
+tbody tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+/* 3. PSEUDO-CLASS FIRST-CHILD */
+tbody tr:first-child {
+    font-weight: bold;
+}
+
+/* Hover effect - rubric requirement */
+tbody tr:hover {
+    background-color: #c8e6c9;
+}
+
+/* 4. DIRECT CHILD SELECTOR - rubric requirement */
+.add-expense-section > form > input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+}
+
+/* 5. NEGATION PSEUDO-CLASS */
+input:not([type="date"]) {
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+}
+
+/* 6. FOCUS STATE */
+input:focus, select:focus {
+    outline: none;
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+}
+
+select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 318px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+details {
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
